@@ -37,11 +37,11 @@
 
         Base {
             bindings = <
-&none  &none           &none           &none        &none         &none  &none                                                &none            &none  &none        &none        &none            &none          &none
-&none  &kp Q           &kp W           &kp F        &kp P         &kp B  &none                                                &none            &kp J  &kp L        &kp U        &kp Y            &kp SEMICOLON  &none
-&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHFT T   &kp G  &none        &none    &none        &none  &none      &none            &kp M  &hm RSHFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RGUI O     &none
-&none  &lt 3 Z         &kp X           &kp C        &kp D         &kp V                        &none        &none                              &kp K  &kp H        &kp COMMA    &kp DOT          &kp FSLH       &none
-&none  &none           &none           &none        &lt 2 ESCAPE         &lt 1 SPACE  &kp TAB  &kp END      &none  &kp ENTER  &lt 4 BACKSPACE         &none        &none        &none            &none          &none
+&none  &none           &none           &none        &none         &none  &none                                                &none            &none  &none        &none        &none            &none       &none
+&none  &kp Q           &kp W           &kp F        &kp P         &kp B  &none                                                &none            &kp J  &kp L        &kp U        &kp Y            &kp APOS    &none
+&none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHFT T   &kp G  &none        &none    &none      &none  &none        &none            &kp M  &hm RSHFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RGUI O  &none
+&none  &lt 3 Z         &kp X           &kp C        &kp D         &kp V                        &none      &none                                &kp K  &kp H        &kp COMMA    &kp DOT          &kp FSLH    &none
+&none  &none           &none           &none        &lt 2 ESCAPE         &lt 1 SPACE  &kp TAB  &none      &none  &lt 5 ENTER  &lt 4 BACKSPACE         &lt 6 DEL    &none        &none            &none       &none
             >;
         };
 
@@ -82,6 +82,26 @@
 &trans  &kp SEMICOLON     &kp N4  &kp N5  &kp N6      &kp EQUAL             &trans  &trans     &trans      &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI  &trans
 &trans  &kp GRAVE         &kp N2  &kp N3  &kp N4      &kp NON_US_BACKSLASH                     &trans      &trans                  &trans  &trans           &trans     &trans         &trans    &trans
 &trans  &trans            &trans  &trans  &kp PERIOD                        &kp N0  &kp MINUS  &trans      &trans  &trans  &trans          &trans           &trans     &trans         &trans    &trans
+            >;
+        };
+
+        Sym {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans    &trans    &trans                                      &trans  &trans    &trans     &trans     &trans           &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans                                      &trans  &trans    &trans     &trans     &trans           &trans    &trans
+&trans  &trans  &trans    &trans    &kp LPAR  &kp RPAR  &none   &trans  &trans      &trans  &trans  &trans  &trans    &kp RSHFT  &kp RCTRL  &kp RALT         &kp RGUI  &trans
+&trans  &trans  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT                  &trans      &trans                  &kp LBKT  &kp RBKT   &kp LBRC   &kp RIGHT_BRACE  &trans    &trans
+&trans  &trans  &trans    &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans            &trans     &trans     &trans           &trans    &trans
+            >;
+        };
+
+        Fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
