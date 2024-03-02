@@ -40,7 +40,7 @@
 &none  &none           &none           &none        &none         &none  &none                                                &none          &none  &none        &none        &none            &none          &none
 &none  &kp Q           &kp W           &kp F        &kp P         &kp B  &none                                                &none          &kp J  &kp L        &kp U        &kp Y            &kp SEMICOLON  &none
 &none  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHFT T   &kp G  &none        &none    &none        &none  &none      &none          &kp M  &hm RSHFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RGUI O     &none
-&none  &kp Z           &kp X           &kp C        &kp D         &kp V                        &none        &none                            &kp K  &kp H        &kp COMMA    &kp DOT          &kp FSLH       &none
+&none  &lt 3 Z         &kp X           &kp C        &kp D         &kp V                        &none        &none                            &kp K  &kp H        &kp COMMA    &kp DOT          &kp FSLH       &none
 &none  &none           &none           &none        &lt 2 ESCAPE         &lt 1 SPACE  &kp TAB  &kp END      &none  &kp ENTER  &kp BACKSPACE         &none        &none        &none            &none          &none
             >;
         };
@@ -62,6 +62,16 @@
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &trans      &trans  &trans      &trans            &trans      &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT    &trans
 &trans  &trans        &trans        &trans     &trans     &trans                  &trans      &trans                                &bt BT_NXT  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans     &trans             &trans  &trans  &trans      &trans  &kp C_STOP  &kp C_PLAY_PAUSE              &kp K_MUTE      &trans        &trans           &trans        &trans
+            >;
+        };
+
+        Buttons {
+            bindings = <
+&trans  &trans      &trans     &trans      &trans       &trans      &trans                                               &trans     &trans      &trans       &trans      &trans     &trans      &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO  &trans                                               &trans     &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans      &trans     &trans     &trans      &trans  &trans     &trans     &trans      &kp RSHFT    &kp RCTRL   &kp RALT   &kp RGUI    &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO                        &trans      &trans                        &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &trans      &trans     &trans      &mkp MCLK                &mkp LCLK  &mkp RCLK  &trans      &trans  &mkp RCLK  &mkp LCLK              &mkp MCLK    &trans      &trans     &trans      &trans
             >;
         };
     };
