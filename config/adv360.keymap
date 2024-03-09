@@ -71,28 +71,28 @@
 &trans  &trans      &trans     &trans      &trans       &trans      &trans                                               &trans     &trans      &trans       &trans      &trans     &trans      &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO  &trans                                               &trans     &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
 &trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans      &trans     &trans     &trans      &trans  &trans     &trans     &trans      &kp RSHFT    &kp RCTRL   &kp RALT   &kp RGUI    &trans
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO                        &trans      &trans                        &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &none       &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO                        &trans      &trans                        &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
 &trans  &trans      &trans     &trans      &mkp MCLK                &mkp LCLK  &mkp RCLK  &trans      &trans  &mkp RCLK  &mkp LCLK              &mkp MCLK    &trans      &trans     &trans      &trans
             >;
         };
 
         Num {
             bindings = <
-&trans  &trans            &trans  &trans  &trans      &trans                &trans                                         &trans  &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9      &kp RIGHT_BRACKET     &trans                                         &trans  &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &kp SEMICOLON     &kp N4  &kp N5  &kp N6      &kp EQUAL             &trans  &trans     &trans      &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI  &trans
-&trans  &kp GRAVE         &kp N2  &kp N3  &kp N4      &kp NON_US_BACKSLASH                     &trans      &trans                  &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &trans            &trans  &trans  &kp PERIOD                        &kp N0  &kp MINUS  &trans      &trans  &trans  &trans          &trans           &trans     &trans         &trans    &trans
+&trans  &trans            &trans           &trans        &trans        &trans                &trans                                         &trans  &trans  &trans           &trans     &trans         &trans    &trans
+&trans  &kp LEFT_BRACKET  &kp N7           &kp N8        &kp N9        &kp RIGHT_BRACKET     &trans                                         &trans  &trans  &trans           &trans     &trans         &trans    &trans
+&trans  &kp SEMICOLON     &kp N4           &kp N5        &kp N6        &kp EQUAL             &trans  &trans     &trans      &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RGUI  &trans
+&trans  &kp GRAVE         &kp KP_NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH                     &trans      &trans                  &trans  &trans           &trans     &trans         &trans    &trans
+&trans  &trans            &kp PERCENT      &kp ASTERISK  &kp PERIOD                          &kp N0  &kp MINUS  &trans      &trans  &trans  &trans          &trans           &trans     &trans         &trans    &trans
             >;
         };
 
         Sym {
             bindings = <
-&trans  &trans           &trans         &trans            &trans             &trans      &trans                                      &trans  &trans         &trans         &trans            &trans    &trans        &trans
-&trans  &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD  &trans                                      &trans  &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RBKT  &kp PERCENT   &trans
-&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH    &none   &trans  &trans      &trans  &trans  &trans  &kp PIPE       &kp COLON      &kp LPAR          &kp RPAR  &kp QUESTION  &trans
-&trans  &kp CARET        &kp FSLH       &kp ASTERISK      &kp BSLH           &kp FSLH                    &trans      &trans                  &kp TILDE      &kp DOLLAR     &kp LBRC          &kp RBRC  &kp AT_SIGN   &trans
-&trans  &trans           &trans         &trans            &trans                         &trans  &trans  &trans      &trans  &trans  &trans                 &trans         &trans            &trans    &trans        &trans
+&trans  &trans           &trans         &trans             &trans            &trans      &trans                                      &trans  &trans         &trans         &trans            &trans    &trans        &trans
+&trans  &kp SQT          &kp LESS_THAN  &kp DOUBLE_QUOTES  &kp GREATER_THAN  &kp PERIOD  &trans                                      &trans  &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RBKT  &kp PERCENT   &trans
+&trans  &kp EXCLAMATION  &kp EQUAL      &kp MINUS          &kp PLUS          &kp HASH    &none   &trans  &trans      &trans  &trans  &trans  &kp PIPE       &kp COLON      &kp LPAR          &kp RPAR  &kp QUESTION  &trans
+&trans  &kp CARET        &kp FSLH       &kp ASTERISK       &kp BSLH          &none                       &trans      &trans                  &kp TILDE      &kp DOLLAR     &kp LBRC          &kp RBRC  &kp AT_SIGN   &trans
+&trans  &trans           &trans         &trans             &trans                        &trans  &trans  &trans      &trans  &trans  &trans                 &trans         &trans            &trans    &trans        &trans
             >;
         };
 
@@ -110,7 +110,7 @@
             bindings = <
 &kp EQUAL   &kp N1    &kp N2    &kp N3    &kp N4     &kp N5  &kp N6                                              &kp N6         &kp N7  &kp N8        &kp N9          &kp N0    &kp MINUS  &to 0
 &kp TAB     &kp Q     &kp W     &kp E     &kp R      &kp T   &kp Y                                               &kp Y          &kp U   &kp I         &kp O           &kp P     &trans     &trans
-&kp ESCAPE  &kp A     &kp S     &kp D     &kp F      &kp G   &kp H      &trans    &trans      &trans  &trans     &kp H          &kp J   &kp K         &kp L           &kp SEMI  &trans     &trans
+&kp ESCAPE  &kp A     &kp S     &kp D     &kp F      &kp G   &kp H      &kp M     &kp N       &trans  &trans     &kp H          &kp J   &kp K         &kp L           &kp SEMI  &trans     &trans
 &kp LSHFT   &kp Z     &kp X     &kp C     &kp V      &kp B                        &trans      &trans                            &kp N   &kp M         &kp COMMA       &kp DOT   &kp FSLH   &trans
 &kp LCTRL   &kp APOS  &kp LALT  &kp LEFT  &kp RIGHT          &kp SPACE  &kp RALT  &trans      &trans  &kp ENTER  &kp BACKSPACE          &kp UP_ARROW  &kp DOWN_ARROW  &trans    &trans     &trans
             >;
